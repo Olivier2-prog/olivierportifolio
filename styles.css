@@ -1,6 +1,7 @@
 :root {
   --primary-color: rgb(235, 155, 6);
   --color-1: #fff;
+  --color-2:black;
 }
 
 * {
@@ -12,6 +13,9 @@
 }
 a {
   text-decoration: none;
+}
+img{
+  width: 100%;
 }
 header {
   display: flex;
@@ -106,11 +110,12 @@ header .navlink,
   transition: 0.3s ease;
   margin: 10px 0;
 }
+.icon img{
+  width: auto;
+}
 .icon:hover {
   cursor: pointer;
   transform: scale(1.2) translateY(-30px);
-}
-.btn-hire-me {
 }
 .btn-hire-me:hover {
   cursor: pointer;
@@ -130,6 +135,107 @@ header .navlink,
   font-size: 1.2em;
   animation: animate-cursor 1s linear 2s infinite;
 }
+.about-section{
+  padding: 30px;
+}
+.section-header{
+  text-align: center;
+  margin: 70px 0  40px !important;
+}
+.section-header h2{
+  text-align: center;
+  font-size: 3rem;
+
+ 
+}
+.section-header p{
+  text-align: center;
+  font-size: 1.2rem;
+ 
+}
+.about-content{
+  margin-top: 30px;
+}
+.about-content h2{
+
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+.about-content h3{
+
+  margin: 15px 0;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+.about-content p{
+
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.progress{
+  width: 100%;
+  height: 40px;
+  background-color: var(--color-2);
+  border-radius: 40px;
+  position: relative;
+}
+.skills-grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-area: 30px;
+  margin-top: 40px;
+}
+.skill{
+  font-size: 1.3rem!important;
+  font-weight: 600;
+}
+.stage-1{
+  width: 95%;
+  height: 100%;
+  border-radius: 40px;
+  background-color:var(--primary-color);
+}
+.stage-2{
+  width: 80%;
+  height: 100%;
+  border-radius: 40px;
+    background-color:var(--primary-color);
+
+}
+.stage-3{
+  width: 50%;
+  height: 100%;
+  border-radius: 40px;
+    background-color:var(--primary-color);
+
+}
+.rate{
+position: absolute;
+top: 0;
+color: var(--color-1);
+left: 50%;
+margin-top: 5px;
+font-size: 1.4rem;
+font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact{
+  background-color: red;
+  padding: 30px ;
+}
 @media only screen and (min-width: 760px) {
   .home-content h2 {
     font-size: 3rem;
@@ -142,13 +248,24 @@ header .navlink,
     font-size: 1.8rem;
   }
 }
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1000px) {
   .logo {
     font-size: 3rem;
   }
   .navlink {
     font-size: 1.9rem !important;
     margin-left: 20px !important;
+  }
+  .section-header h2{
+    text-align: center;
+    font-size: 3.2rem;
+  
+   
+  }
+  .section-header p{
+    text-align: center;
+    font-size: 1.5rem;
+   
   }
   .home {
     flex-direction: row;
@@ -160,10 +277,6 @@ header .navlink,
   .home-img {
     width: 40vw;
     border-radius: 50%;
-  }
-  .home-content {
-    /* width: 45%; */
-  
   }
   .home-content h2 {
     font-size: 4rem;
@@ -189,6 +302,42 @@ header .navlink,
     justify-content: center;
     transition: 0.3s ease;
     margin: 30px 0;
+  }
+  .container{
+    max-width: 95%;
+    margin:0 auto;
+    /* border: 1px solid green; */
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3em;
+  }
+  .card{
+    margin-bottom: 0;
+  }
+  .about-img{
+    width: 100%;
+  }
+  .about-section{
+    min-height: fit-content;
+   
+  }
+  .about-content h2{
+
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+  .about-content h3{
+  
+    margin: 15px 0;
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+  .skill{
+    font-size: 2.3rem!important;
+    font-weight: 600;
   }
 }
 
