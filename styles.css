@@ -20,6 +20,10 @@ a {
 img{
   width: 100%;
 }
+
+.round-corner{
+  border-radius: 40px;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -174,7 +178,9 @@ header .navlink,
 .about-content p{
 
   margin-bottom: 10px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  letter-spacing: 1px;
 }
 .progress{
   width: 100%;
