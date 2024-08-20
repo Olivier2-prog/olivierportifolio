@@ -178,6 +178,7 @@ header .navlink,
 }
 .about-content{
   margin-top: 30px;
+  text-align: justify;
 }
 .about-content h2{
 
@@ -244,24 +245,59 @@ margin-top: 5px;
 font-size: 1.4rem;
 font-weight: 700;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-.contact{
-  background-color: red;
-  padding: 30px ;
+.container-sm{
+  margin: 0 auto;
+  width: 90%;
+  max-width: 90%;
 }
-@media only screen and (min-width: 760px) {
+.services{
+  /* background-color: coral; */
+  margin-top: 30px;
+  padding-top: 30px;
+padding-bottom: 100px;
+}
+.services .row{
+  margin-top: 50px;
+  display: grid;
+  gap: 20px;
+}
+.services .row .service{
+  width: 100%;
+  padding: 5%;
+  box-shadow: 2px 2px 10px 0px gray;
+  transition: .5s ease;
+
+
+}
+
+.services .row .service h2{
+  margin: 10px 0;
+  text-align: center;
+  font-size: 40px;
+}
+.services .row .service p{
+  font-size: 20px;
+
+}
+.services .row .service .fa-solid{
+color: var(--primary-color);
+font-weight: 700;
+font-size: 100px;
+text-align: center;
+display: flex;
+justify-content: center;
+margin-bottom: 20px;
+}
+.services .row .service:hover{
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+.services .row .service:hover .fa-solid{
+color: var(--color-2);
+  cursor: pointer;
+}
+@media only screen and (min-width: 960px) {
+ 
   .home-content h2 {
     font-size: 3rem;
     margin-bottom: 20px;
@@ -272,10 +308,15 @@ font-weight: 700;
   .home-content .btn-hire-me {
     font-size: 1.8rem;
   }
+  /* .about-img{
+    display: none;
+  } */
 }
 @media only screen and (min-width: 1000px) {
  
- 
+  .about-img{
+    display: block;
+  }
   .fa-bars{
     /* display: none; */
   }
@@ -342,12 +383,15 @@ font-weight: 700;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 3em;
+    place-content: center;
   }
   .card{
     margin-bottom: 0;
   }
   .about-img{
     width: 100%;
+    justify-self: center;
+    align-self: end;
   }
   .about-section{
     min-height: fit-content;
@@ -368,6 +412,11 @@ font-weight: 700;
   .skill{
     font-size: 2.3rem!important;
     font-weight: 600;
+  }
+  .services .row{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(200px,1fr));
   }
 }
 
