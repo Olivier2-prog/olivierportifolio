@@ -273,10 +273,10 @@ padding-bottom: 100px;
 .services .row .service h2{
   margin: 10px 0;
   text-align: center;
-  font-size: 40px;
+  font-size: 25px;
 }
 .services .row .service p{
-  font-size: 20px;
+  font-size: 18px;
   text-align: justify;
 
 }
@@ -297,6 +297,24 @@ margin-bottom: 20px;
 color: var(--color-2);
   cursor: pointer;
 }
+.grid{
+  grid-template-columns: 1fr;
+ }
+ .footer{
+  
+ }
+ .footer .col{
+
+ }
+ .footer .col .sub-form{
+
+ }
+ .footer .col .sub-form input{
+
+ }
+ .footer .col .contact-form input{
+
+ }
 @media only screen and (min-width: 960px) {
  
   .home-content h2 {
@@ -315,6 +333,9 @@ color: var(--color-2);
   .services .row{
   grid-template-columns:repeat(2,minmax(200px,1fr)) ;
   }
+ .grid{
+  grid-template-columns: 1fr;
+ }
 }
 @media only screen and (min-width: 1000px) {
  
