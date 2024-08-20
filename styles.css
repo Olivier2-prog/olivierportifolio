@@ -42,12 +42,13 @@ header {
 }
 .nav-links{
   position: absolute;background-color: chocolate;
-  width: 100%;
-  left: 0;
+  width: 50%;
+right: 0;
   padding: 30px;
   top: 95px;
   background-color: var(--color-2);
   transform: display 0.5s ease;
+  height: fit-content;
 }
 header .navlink,
 .logo {
@@ -148,13 +149,13 @@ header .navlink,
 .animate-text::before {
   content: " ";
   color: var(--primary-color);
-  font-size: 1.2em;
+  font-size: 20px;
   animation: animate-text 13s linear 5s infinite;
 }
 .animate-text::after {
   content: " ";
   color: var(--primary-color);
-  font-size: 1.2em;
+  font-size: 20px;
   animation: animate-cursor 1s linear 2s infinite;
 }
 .about-section{
@@ -273,20 +274,10 @@ font-weight: 700;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .nav-links{
-    position: static;
-   
-    width: 50%;
-    top: 0;
-    display: flex;
-    justify-content: flex-end;
-  }
-  .nav-link{
-    display: inline;
-    margin-bottom: 0;
-  }
+ 
+ 
   .fa-bars{
-    display: none;
+    /* display: none; */
   }
   .logo {
     font-size: 3rem;
