@@ -21,6 +21,10 @@ img{
   width: 100%;
 }
 
+.fa-bars{
+  color: var(--color-1)!important;
+  font-size: 32px;
+}
 .round-corner{
   border-radius: 40px;
 }
@@ -36,6 +40,14 @@ header {
   left: 0;
   z-index: 1000;
 }
+.nav-links{
+  position: absolute;background-color: chocolate;
+  width: 100%;
+  left: 0;
+  padding: 30px;
+  top: 100px;
+  background-color: var(--color-2);
+}
 header .navlink,
 .logo {
   color: white;
@@ -46,6 +58,9 @@ header .navlink,
 }
 .navlink {
   transition: 0.3s linear;
+  display: block;
+  margin-bottom: 10px;
+
 }
 .logo {
   font-size: 1.5rem;
@@ -54,8 +69,7 @@ header .navlink,
 .logo:hover,
 .navlink:hover,
 .navlink:active {
-  transform: scale(1.3);
-  color: rgb(235, 155, 6);
+
 }
 .home {
     padding-top: 70px;
