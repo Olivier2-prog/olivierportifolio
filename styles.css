@@ -4,6 +4,7 @@
 
 :root {
   --primary-color: rgb(235, 155, 6);
+  --secondary-color: rgb(161, 105, 0);
   --color-1: #fff;
   --color-2:black;
 }
@@ -301,20 +302,125 @@ color: var(--color-2);
   grid-template-columns: 1fr;
  }
  .footer{
+  background-color: var(--primary-color);
+  padding: 40px 0;
+ }
+ .footer h3{
+  margin: 10px 0;
+  text-transform: uppercase;
   
  }
- .footer .col{
+ .footer  a{
+text-transform: capitalize;
+padding: 10px 0;
+color: var(--color-2);
+font-weight: 400;
+display: block;
+font-size: 18px;
+font-style: oblique;
 
+  
+ }
+ .footer ul{
+  list-style: none;
+ }
+ .footer .col{
+border-bottom: 1px solid #000;
+padding-bottom: 30px;
+ }
+ .footer p{
+  margin: 0;
+ }
+ .footer .col:nth-child(2){
+margin: 0;
  }
  .footer .col .sub-form{
+width: 100%;
+display:flex;
+margin-top: 10px;
 
  }
  .footer .col .sub-form input{
+display: inline-block;
+width: 100%;
+ }
+ .footer .col .sub-form input[type="submit"]{
+flex: 1 1 30%;
+height: 40px;
+margin-left: -10px;
+border: none;
+padding: 5px;
+background-color: var(--secondary-color);
+color: var(--color-1);
+font-weight: 600;
+font-size: 18px;
+text-align: center;
+vertical-align: middle;
+ }
+ .footer .col .sub-form input[type="email"]{
+flex: 1 1  auto;
+height: 40px;
+margin-left: -px;
+border: none;
+padding: 10px ;
+outline: none;
+ }
+ .footer .col .sub-form input[type="email"]::placeholder{
+font-weight: 700;
+ }
+ .footer .col .sub-form input[type="email"]:focus::placeholder{
+opacity: 0;
+ }
+
+ .footer .col .contact-form{
+  margin-top: 10px;
+  width: 100%;
+display:block;
 
  }
- .footer .col .contact-form input{
+label{
+  width: 100%;
+display:block;
+margin: 10px 0;
+font-weight: 500;
+ }
+ .footer .col .contact-form input, .footer .col .contact-form textarea{
+  margin-top: 5px;
+display: block;
+width: 100%;
 
  }
+ .footer .col .contact-form input[type="email"]{
+  flex: 1 1  auto;
+  height: 40px;
+  margin-left: -px;
+  border: none;
+  padding: 10px ;
+  outline: none;
+   }
+ .footer .col .contact-form textarea{
+padding:5px 10px;
+   }
+ .footer .col .contact-form input[type="email"]::placeholder{
+  font-weight: 700;
+   }
+   .footer .col .contact-form input[type="email"]:focus::placeholder{
+  opacity: 0;
+   }
+ .footer .col .contact-form textarea::placeholder{
+  font-weight: 700;
+  padding: 10px;
+   }
+   .footer .col .contact-form textarea:focus::placeholder{
+  opacity: 0;
+   }
+   button[type="submit"]{
+    margin-top: 10px;
+    padding: 10px 40px;
+    background-color: var(--secondary-color);
+    color: var(--color-1);
+    border: none;
+   }
 @media only screen and (min-width: 960px) {
  
   .home-content h2 {
