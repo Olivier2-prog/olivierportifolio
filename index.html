@@ -11,11 +11,11 @@
   <body>
     <header>
       <a href="#" class="logo">Olivier.</a>
-      <div class="nav-links">
+      <div class="nav-links" id="menus">
         <a href="#" class="navlink">Home</a>
         <a href="#" class="navlink">Contact</a>
       </div> 
-    <i class="fa-solid fa-bars"></i>
+    <i class="fa-solid fa-bars" onclick="showMenu()"></i>
     </header>
     <section class="home">
       <!-- <img src="/images/img-1.jpg" alt="" class="home-img" /> -->
@@ -81,5 +81,28 @@ Let's create something amazing together!
  </div>
  </div>
     </section>
+
+
+    <!-- ----- SCRIPT----  -->
+     <script>
+var menus=document.getElementById('menus');
+menus.style.display="none";
+function showMenu(){
+if(menus.style.display=="none"){
+menus.style.display="block";
+
+}
+else{
+menus.style.display="none";
+
+}
+  
+  console.log('clicked!')
+}
+
+
+
+
+     </script>
   </body>
 </html>

@@ -45,8 +45,9 @@ header {
   width: 100%;
   left: 0;
   padding: 30px;
-  top: 100px;
+  top: 95px;
   background-color: var(--color-2);
+  transform: display 0.5s ease;
 }
 header .navlink,
 .logo {
@@ -272,6 +273,21 @@ font-weight: 700;
   }
 }
 @media only screen and (min-width: 1000px) {
+  .nav-links{
+    position: static;
+   
+    width: 50%;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav-link{
+    display: inline;
+    margin-bottom: 0;
+  }
+  .fa-bars{
+    display: none;
+  }
   .logo {
     font-size: 3rem;
   }
