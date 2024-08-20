@@ -277,6 +277,7 @@ padding-bottom: 100px;
 }
 .services .row .service p{
   font-size: 20px;
+  text-align: justify;
 
 }
 .services .row .service .fa-solid{
@@ -311,6 +312,9 @@ color: var(--color-2);
   /* .about-img{
     display: none;
   } */
+  .services .row{
+  grid-template-columns:repeat(2,minmax(200px,1fr)) ;
+  }
 }
 @media only screen and (min-width: 1000px) {
  
