@@ -14,6 +14,8 @@
   padding: 0;
   box-sizing: border-box;
  font-family: "Poppins", sans-serif;
+ scroll-behavior: smooth;
+ scroll-margin-top:100px ;
 }
 a {
   text-decoration: none;
@@ -256,6 +258,7 @@ font-weight: 700;
   margin-top: 30px;
   padding-top: 30px;
 padding-bottom: 100px;
+min-height: fit-content;
 }
 .services .row{
   margin-top: 50px;
@@ -303,11 +306,13 @@ color: var(--color-2);
  }
  .footer{
   background-color: var(--primary-color);
-  padding: 40px 0;
+  padding: 40px 0 20px 0;
  }
  .footer h3{
-  margin: 10px 0;
-  text-transform: uppercase;
+  margin: 10px 0 30px 0;
+  text-transform: capitalize;
+  font-size: 32px;
+
   
  }
  .footer  a{
@@ -318,21 +323,27 @@ font-weight: 400;
 display: block;
 font-size: 18px;
 font-style: oblique;
+transition: .5s ease;
 
   
+ }
+ .footer a:hover{
+  font-size: 20px;
+  font-weight: 500;
  }
  .footer ul{
   list-style: none;
  }
  .footer .col{
-border-bottom: 1px solid #000;
+/* border-bottom: 1px solid #000; */
 padding-bottom: 30px;
  }
  .footer p{
-  margin: 0;
+  margin: 10px 0;
+  font-size: 20px;
  }
- .footer .col:nth-child(2){
-margin: 0;
+ .footer .col:last-child{
+margin-bottom: 0;
  }
  .footer .col .sub-form{
 width: 100%;
@@ -381,11 +392,12 @@ display:block;
 label{
   width: 100%;
 display:block;
-margin: 10px 0;
+margin: 30px 0!important;
 font-weight: 500;
+font-size: 20px;
  }
  .footer .col .contact-form input, .footer .col .contact-form textarea{
-  margin-top: 5px;
+  margin-top: 10px;
 display: block;
 width: 100%;
 
@@ -400,6 +412,7 @@ width: 100%;
    }
  .footer .col .contact-form textarea{
 padding:5px 10px;
+outline: none;
    }
  .footer .col .contact-form input[type="email"]::placeholder{
   font-weight: 700;
@@ -433,9 +446,7 @@ padding:5px 10px;
   .home-content .btn-hire-me {
     font-size: 1.8rem;
   }
-  /* .about-img{
-    display: none;
-  } */
+ 
   .services .row{
   grid-template-columns:repeat(2,minmax(200px,1fr)) ;
   }
@@ -548,6 +559,12 @@ padding:5px 10px;
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3,minmax(200px,1fr));
+  }
+  .footer .grid-wrapper{
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 4em;
   }
 }
 
